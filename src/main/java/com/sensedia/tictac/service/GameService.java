@@ -1,8 +1,10 @@
 package com.sensedia.tictac.service;
 
-import org.springframework.stereotype.Service;
+import com.sensedia.tictac.domain.model.Game;
 
-@Service
-public class GameService {
+
+public interface GameService {
+
+    public Game createGame(Game game);
 
 }
