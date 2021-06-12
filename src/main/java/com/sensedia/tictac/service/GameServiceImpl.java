@@ -13,8 +13,8 @@ public class GameServiceImpl implements GameService {
 
     @Override
     public Game createGame(Game game) {
+        game.validGame();
         return gameRepository.save(game);
+
     }
-
-
 }
